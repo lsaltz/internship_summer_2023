@@ -166,9 +166,9 @@ if __name__ == '__main__':
     leader_curve = np.array([x1, y1, z1]).T
     """
 
-    camera = c.PinholeCameraModel()
-    camera.from_npz(p.cam)
-    assert isinstance(camera, c.PinholeCameraModel)
+    #camera = c.PinholeCameraModel()
+    #camera.from_npz(p.cam)
+    #assert isinstance(camera, c.PinholeCameraModel)
 
     d = Depths_Average(p.depth_img, p.mask_img)
     rad, curve_pts, curve, ts = d.get_radii()
