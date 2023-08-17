@@ -7,6 +7,7 @@ import curve_fitting as cf
 import matplotlib.pyplot as plt
 from skimage import io, color, img_as_bool
 from curve_fitting import BezierBasedDetection, Bezier
+from generate_3d import Generate_3D
 
 
 class Depths_Average:
@@ -260,10 +261,13 @@ if __name__ == '__main__':
 
     angle_score = dm.check_angle_match(leader_tan, follower_tan)
     total_score = angle_score + depth_score + minimum_distance
-
+    #g = Generate_3D(leader_pts, rad, ts, curve)
+    #g.create_mesh()
+    g2 = Generate_3D(follower_pts, rad2, ts2, curve2)
+    g2.create_mesh()
     fig = plt.figure()
     ax = fig.add_subplot(projection='3d')
-
+    
     print("Total: ", total_score)
     print("Angle Score: ", angle_score)
     print("Min Dist: ", minimum_distance)
