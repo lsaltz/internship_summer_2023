@@ -42,6 +42,10 @@ It displays in the terminal:
 ![alt text](output.png)
 This shows the total score for how likely a side branch is to match to a leader branch(lower is better).
 
+# Instructions for Installing PyK4A
+- See: [Kinect on Ubuntu](https://github.com/juancarlosmiranda/azure_kinect_notes)
+- And: [PyK4A](https://github.com/etiennedub/pyk4a)
+
 # TODO:
 - Test camera to confirm conversion between depth data and meters
 - Implement loop to manage all files that need to be tested
