@@ -48,9 +48,3 @@ This shows the total score for how likely a side branch is to match to a leader 
 # Instructions for Installing PyK4A
 - See: [Kinect on Ubuntu](https://github.com/juancarlosmiranda/azure_kinect_notes)
 - And: [PyK4A](https://github.com/etiennedub/pyk4a)
-
-# TODO:
-- Image annotations for model
-- Test camera to confirm conversion between depth data and meters
-- Implement loop to manage all files that need to be tested
-- Implement loop to manage multiple frames from video footage
